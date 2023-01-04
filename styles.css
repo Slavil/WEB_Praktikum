@@ -1,560 +1,115 @@
-html {
-    font-family: Helvetica, sans-serif;
-    font-size: 1.5;
-    background: lightgrey;
-}
-body {
-    margin: 0;
-}
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-header {
-    box-shadow: 2rem 1rem 0.5rem #888888;
-    width: 100vw;
-}
-.navbar {
-    list-style-type: none;
-    margin-left: 0;
-    margin-right: 4rem;
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-  }
-.navbarEl{
-    padding: 0.5rem;
-    background-color: #d9d8d6;
-    margin: 1rem;
-    border-radius: 30%;
-    width: 5rem;
-    text-align: center;
-}
-input[type=text], input[type=password] {
-    width: 100%;
-    padding: 1.5rem 2.5rem;
-    margin: 1rem 0;
-    display: inline-block;
-    border: 0.2rem solid #ccc;
-    box-sizing: border-box;
-  }
-button {
-    background-color: #04AA6D;
-    color: white;
-    padding: 1rem 2rem;
-    margin: 1rem 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-  }
-  
-  button:hover {
-    opacity: 0.8;
-  }
-  
-.fa {
-    padding: 2.5rem;
-    font-size: 3.5rem;
-    width: 8rem;
-    text-align: center;
-    text-decoration: none;
-  }
-  
-  .fa:hover {
-    opacity: 0.7;
-  }
-  
-  .fa-facebook {
-    background: #3B5998;
-    color: white;
-    border-radius: 50%;
-    padding: 0.3rem;
-    width: 2rem;
-  }
-
-  .fa-twitter {
-    background: #55ACEE;
-    color: white;
-    border-radius: 50%;
-    padding: 0.3rem;
-    width: 2rem;
-  }
-  .fa-linkedin {
-    background: #007bb5;
-    color: white;
-    border-radius: 50%;
-    padding: 0.3rem;
-    width: 2rem;
-  }
-.icons{
-    display: flex;
-    flex-direction: row;
-    margin-right: 5rem;
-    align-items: flex-end;
-}
-.header {
-    background: white;
-    display: flex;
-    flex-direction: row;
-    justify-content:  space-between;
-    align-items: center;
-}
-.head {
-    font-weight: bold;
-    font-size: 3.5rem;
-    text-align: center;
-    top: 3rem;
-    color: grey;
-}
-
-.header-image-first {
-    width: 9rem;
-    height: 3.5rem;
-    margin-left: 3rem;
-}
-.nas{
-    width: 100vw;
-}
-.za-nas {
-    display: flex;
-    flex-direction: row;
-}
-.imgNas {
-    width: 20rem;
-    margin: 2.5rem;
-    height: 15rem;
-    border-radius: 1rem;
-    float: left;
-    -ms-transform: rotate(-8deg);
-    -webkit-transform: rotate(-8deg);
-    transform: rotate(-8deg);
-    box-shadow: 2rem 1rem 0.5rem #888888;
-}
-#left {
-    float: left;
-    -ms-transform: rotate(7deg);
-    -webkit-transform: rotate(7deg);
-    transform: rotate(7deg);
-}
-.imagesNas {
-    margin-top: 1rem;
-}
-.nas-text {
-    font-size: 1.5rem;
-    width: 70vw;
-    line-height: 1.5;
-    letter-spacing: 0.2rem;
-    margin: 2rem;
-    margin-bottom: 3rem;
-    margin-top: 3rem;
-    background: white;
-    padding: 3.5rem;
-    border-radius: 1rem;
-    box-shadow: 2rem 1rem 0.5rem #888888;
-}
-.four_box{
-    display: flex;
-    flex-direction: row;
-}
-.four_box_art{
-    width: 20rem;
-    margin: 2rem;
-    height: 20rem;
-    border-radius: 8px;
-    box-shadow: 2rem 1rem 0.5rem #888888;
-    background-color: white;
-    text-align: center;
-}
-
-.contact-all {
-    display: flex;
-    justify-content: center;
-    margin-top: 3rem;
-}
-.contacts {
-    font-size: 1rem;
-    line-height: 1.5;
-    letter-spacing: 0.1rem;
-    margin: 2rem;
-    margin-bottom: 5rem;
-    margin-top: 3rem;
-    background: white;
-    padding: 5rem;
-    border-radius: 1rem;
-    box-shadow: 2rem 1rem 0.5rem #888888;
-    width: 30vw;
-    height: 75%;
-}
-.contactForm {
-    margin-right: 100px;
-    display: flex;
-    flex-direction: row;
-    width: 100vw;
-}
-
-.maps{
-    margin-bottom: 5rem;
-    margin-top: 3rem;
-    background: white;
-    border-radius: 1rem;
-    box-shadow: 2rem 1rem 0.5rem #888888;
-    width: 60vw;
-    height: 75%;
-}
-footer {
-    background: white;
-    padding: 1rem;
-    margin-top: auto;
-    min-height: 4rem;
-    box-shadow: 0px 0px 15px 10px #888888;
-    width: 100vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.fa-twitter, .fa-linkedin{
-    margin-left: 1rem;
-}
-
-@media all and (max-width: 1299px) and (min-width: 1200px) {
+@media(min-width: 1025px){
+    html {
+        font-family: Helvetica, sans-serif;
+        font-size: 1.5;
+        background: lightgrey;
+    }
     body {
         margin: 0;
     }
-    *,
-    *::before,
-    *::after {
+    *{
         box-sizing: border-box;
     }
-    .header{
+    #formReg{
+        padding: 1.5rem;
+    }
+    #four{
+        margin-top: 3rem;
+    }
+    #containerFour{
         display: flex;
-        width: 100vw;
+        justify-content: space-evenly;
+        width: 90vw;
     }
-    #left,#last{
-        width: 15rem;
-        height: 15rem;
-    }
-    .contactForm{
+    #contacts{
         display: flex;
         flex-direction: row;
-    }
-    .contacts{
-        width: 35vw;
-        height: 39vh;
-        padding-left: 2rem;
-        padding-top: 0rem;
-    }
-    .maps{
-        width: 58vw;
-        height: 39vh;
-    }
-}
-
-@media all and (max-width: 1199px) and (min-width: 1001px) {
-    body {
-        margin: 0;
-    }
-    *,
-    *::before,
-    *::after {
-        box-sizing: border-box;
-    }
-    .header{
+        margin-top: 3rem;
         display: flex;
+        justify-content: space-evenly;
         width: 100vw;
     }
-    #left,#last{
-        width: 10rem;
-        height: 13rem;
+    #contactForm{
+        padding: 1rem;
     }
-    .contactForm{
-        display: flex;
-        flex-direction: row;
-    }
-    .contacts{
-        width: 35vw;
-        height: 39vh;
-        padding-left: 2rem;
-        padding-top: 0rem;
-        font-size: 0.9rem;
-    }
-    .maps{
-        width: 56vw;
-        height: 39vh;
-    }
-}
-
-@media all and (max-width: 1000px) and (min-width: 801px) {
-    body {
-        margin: 0;
-    }
-    *,
-    *::before,
-    *::after {
-        box-sizing: border-box;
-    }
-    .header{
-        display: flex;
-        width: 100vw;
-    }
-    #left{
-        display: none;
-    }
-    .contactForm{
-        display: flex;
-        flex-direction: row;
-    }
-    .contacts{
-        width: 35vw;
-        height: 39vh;
-        padding-left: 2rem;
-    }
-    .maps{
-        width: 53vw;
-        height: 39vh;
-    }
-}
-
-@media all and (max-width: 800px) and (min-width: 601px) {
-    body {
-        margin: 0;
-    }
-
-    *,
-    *::before,
-    *::after {
-        box-sizing: border-box;
-    }
-    .header{
-        display: flex;
-        width: 100vw;
-    }
-    #left{
-        display: none;
-    }
-    .contactForm{
-        display: flex;
-        flex-direction: row;
-    }
-    .contacts{
-        width: 37vw;
-        height: 39vh;
-        padding-left: 2rem;
-        padding-top: 1rem;
-    }
-    .maps{
-        width: 51vw;
-        height: 39vh;
-    }
-    
-}
-
-@media all and (max-width: 600px) and (min-width: 401px) {
-    body {
-        margin: 0;
-    }
-
-    *,
-    *::before,
-    *::after {
-        box-sizing: border-box;
-    }
-    .header{
-        display: flex;
-        width: 100vw;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .header-image-first{
-        margin-top: 2rem;
-    }
-    .navbar{
-        display: flex;
-        flex-direction: column;
+    #map{
         margin-left: 3rem;
     }
-    .za-nas{
-        display: flex;
-        flex-direction: column;
-    }
-    .nas-text{
-        width: 85vw;
-    }
-    #left{
-        display: none;
-    }
-    .four_box{
-        display: flex;
-        flex-direction: column;
-    }
-    .four_box_art{
-        width: 85vw;
-    }
-    .contactForm{
-        display: flex;
-        flex-direction: column;
-    }
-    .contacts{
-        width: 85vw;
-        height: 39vh;
-        padding-left: 2rem;
-        padding-top: 1rem;
-        margin-bottom: 2rem;
-    }
-    .maps{
-        width: 85vw;
-        height: 39vh;
-        margin-left: 2rem;
-        margin-top: 2rem;
-    }
-    .footer{
-        display: flex;
-        flex-direction: column;
-    }
-    .footer_text{
-        margin-left: 2.5rem;
-    }
 }
-
-@media all and (max-width: 400px) and (min-width: 301px) {
+@media(min-width: 300px){
+    html {
+        font-family: Helvetica, sans-serif;
+        font-size: 1.5;
+        background: lightgrey;
+    }
     body {
         margin: 0;
     }
-    *,
-    *::before,
-    *::after {
+    *{
         box-sizing: border-box;
     }
-    .header{
+    #formReg{
+        padding: 1.5rem;
+        margin-bottom: 3rem;
+    }
+    #four{
+        margin-top: 3rem;
+    }
+    #contacts{
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        font-size: 1rem;
+    }
+    #contactForm{
+        padding: 1rem;
+    }
+    #map{
         display: flex;
-        width: 100vw;
+        justify-content: center;
+        margin-top: 3rem;
+    }
+    #footerItems{
         display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .header-image-first{
-        margin-top: 2rem;
-    }
-    .navbar{
-        display: flex;
-        flex-direction: column;
-        margin-left: 3rem;
-    }
-    .za-nas{
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 1rem;
-    }
-    .nas-text{
-        width: 85vw;
-    }
-    #left{
-        display: none;
-    }
-    .four_box{
-        display: flex;
-        flex-direction: column;
-    }
-    .four_box_art{
-        width: 85vw;
-        margin-bottom: 1rem;
-    }
-    .contactForm{
-        display: flex;
-        flex-direction: column;
-    }
-    .contacts{
-        width: 85vw;
-        height: 39vh;
-        padding-top: 0rem;
-        padding-left: 1rem;
-        margin-bottom: 1rem;
-        font-size: 0.8rem;
-    }
-    .maps{
-        width: 85vw;
-        height: 39vh;
-        margin-left: 2rem;
-        margin-top: 1rem;
-    }
-    .footer{
-        display: flex;
-        flex-direction: column;
-    }
-    .footer_text{
-        margin-left: 2.5rem;
+        flex-direction: row;
+        justify-content: space-between;
     }
 }
-
-@media all and (max-width: 300px) {
+@media(min-width: 250px){
+    html {
+        font-family: Helvetica, sans-serif;
+        font-size: 1.5;
+        background: lightgrey;
+    }
     body {
         margin: 0;
     }
-    *,
-    *::before,
-    *::after {
+    *{
         box-sizing: border-box;
     }
-    #left, #last{
-        display: none;
+    #formReg{
+        padding: 1.5rem;
+        margin-bottom: 3rem;
     }
-    .header{
-        width: 100vw;
+    #four{
+        margin-top: 3rem;
+    }
+    #contacts{
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        font-size: 1rem;
+    }
+    #contactForm{
+        padding: 1rem;
+    }
+    #map{
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        justify-content: center;
+        margin-top: 3rem;
     }
-    .header-image-first{
-        margin-top: 2rem;
-    }
-    .navbar{
+    #footerItems{
         display: flex;
-        flex-direction: column;
-        margin-left: 3rem;
-    }
-    .za-nas{
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 1rem;
-    }
-    .nas-text{
-        width: 85vw;
-    }
-    #left{
-        display: none;
-    }
-    .four_box{
-        display: flex;
-        flex-direction: column;
-    }
-    .four_box_art{
-        width: 85vw;
-        margin-bottom: 1rem;
-    }
-    .contactForm{
-        display: flex;
-        flex-direction: column;
-    }
-    .contacts{
-        width: 85vw;
-        height: 39vh;
-        padding-top: 0rem;
-        padding-left: 1rem;
-        margin-bottom: 1rem;
-        font-size: 0.8rem;
-    }
-    .maps{
-        width: 85vw;
-        height: 39vh;
-        margin-left: 2rem;
-        margin-top: 1rem;
-    }
-    .footer{
-        display: flex;
-        flex-direction: column;
-    }
-    .footer_text{
-        margin-left: 2.5rem;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 1rem;
     }
 }

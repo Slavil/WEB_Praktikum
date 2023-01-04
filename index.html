@@ -2,96 +2,109 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="сервиз, печка, печки, Пловдив, ремонт">
-    <title>Сервиз за Печки Пловдив</title>
-    <link rel="stylesheet" href="/styles.css">
+    <title>Responsive Web Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <header>
-        <section class="header">
-            <img src="/images/logo.jpg" alt="" class="header-image-first">
-            <ul class="navbar">
-                <li class="navbarEl"><a href="index.html">Ново</a></li>
-                <li class="navbarEl"><a href="index.html">Контакти</a></li>
-                <li class="navbarEl"><a href="index.html">За Нас</a></li>
-              </ul>
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand">My Responsive WebPage</a>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contacts</a></li>
+                <li><a href="#">About us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <form class="col-sm-12 col-md-12 col-lg-6 col-xl-8" id="formReg"
+            style="background-color: rgb(242, 242, 242); border-radius: 8%;">
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+            </div>
+            <div class="form-group">
+                <label for="pwd">Password:</label>
+                <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox" name="remember"> Remember me</label>
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+        <section class="col-sm-12 col-md-12 col-lg-6 col-xl-4">
+            <img src="/images/jici.png" class="img-rounded img-responsive">
         </section>
-    </header>
-    <main class="nas">
-        <section class="za-nas">
-            <section class="nas-text">
-                <form action="login">
-                    <div class="container">
-                      <label for="uname"><b>Username</b></label>
-                      <input type="text" placeholder="Enter Username" name="uname" required>
-                  
-                      <label for="psw"><b>Password</b></label>
-                      <input type="password" placeholder="Enter Password" name="psw" required>
-                  
-                      <button type="submit">Login</button>
+    </div>
+    <div class="container" id="containerFour">
+        <div class="row-sm-12-mb-1 row-md-4-m-1 col-lg-2 col-xl-2"
+            style="background-color: rgb(242, 242, 242); border-radius: 8%;" id="four">
+            <a href="#" class="fa fa-download"></a>
+            <h3>Click above to download!</h3>
+            <p>Not really clickable.</p>
+        </div>
+        <div class="row-sm-12-mb-1 row-md-4-m-1 col-lg-2 col-xl-2"
+            style="background-color: rgb(242, 242, 242); border-radius: 8%;" id="four">
+            <a href="#" class="fa fa-download"></a>
+            <h3>Click above to download!</h3>
+            <p>Not really clickable.</p>
+        </div>
+        <div class="row-sm-12-mb-1 row-md-4-m-1 col-lg-2 col-xl-2"
+            style="background-color: rgb(242, 242, 242); border-radius: 8%;" id="four">
+            <a href="#" class="fa fa-download"></a>
+            <h3>Click above to download!</h3>
+            <p>Not really clickable.</p>
+        </div>
+        <div class="row-sm-12-mb-1 row-md-4-m-1 col-lg-2 col-xl-2"
+            style="background-color: rgb(242, 242, 242); border-radius: 8%;" id="four">
+            <a href="#" class="fa fa-download"></a>
+            <h3>Click above to download!</h3>
+            <p>Not really clickable.</p>
+        </div>
+    </div>
+    <div class="container" id="contacts">
+        <div class="col-sm-12-mt-1 col-md-12-mt-1 col-lg-4-mt-1 col-xl-4-mt-1"
+            style="background-color: rgb(242, 242, 242); border-radius: 8%;" id="contactForm">
+            <h2>Контакти:</h2>
+            <p>Email: <a href="mailto:slavil.bachvarov@gmail.com">slavil.bachvarov@gmail.com</a></p>
+            <p>При въпроси и запитвания, може да се свържете с мен по e-mail. Ще ви отговоря при
+                първа възможност.</p>
+        </div>
+        <div class="mx-auto col-sm-12-m-2 col-md-12-m-2 col-lg-6-m-1 col-xl-6-m-1" id="map" style="border-radius: 10%;">
+            <iframe src="https://maps.google.com/maps?q=Plovdiv%20city&t=&z=13&ie=UTF8&iwloc=&output=embed" class="maps"
+                style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+    <div>
+        <footer class="text-center text-white" style="background-color: rgb(248, 248, 248);">
+            <div class="container">
+                <section id="footerItems">
+                    <div class="text-center text-dark p-3 pull-left">
+                        © 2023 Copyright: Slavi`s Page
                     </div>
-                  
-                  </form>
-            </section>
-            <section class="imagesNas">
-                <img src="/images/jici.png" alt="" class="imgNas" id="left" >
-                <img src="/images/kitchen-electric.jpg" alt="" class="imgNas" id="last">
-                <img src="/images/young-repairman-installs-black-induction-hob-modern-white-scandinavian-style-kitchen-with-concrete-wall-electrician-man-it-yourself-household-chores_137678-429.webp"
-                    alt="" class="imgNas" id="left">
-                <img src="/images/peralnq.jpg" alt="" class="imgNas" id="last">
-            </section>
-        </section>
-
-        <section class="four_box">
-            <article class="four_box_art">
-                <a href="#" class="fa fa-download"></a>
-                <h3>Click above to download!</h3>
-                <p>Not really clickable.</p>
-            </article>
-            <article class="four_box_art">
-                <a href="#" class="fa fa-download"></a>
-                <h3>Click above to download!</h3>
-                <p>Not really clickable.</p>
-            </article>
-            <article class="four_box_art">
-                <a href="#" class="fa fa-download"></a>
-                <h3>Click above to download!</h3>
-                <p>Not really clickable.</p>
-            </article>
-            <article class="four_box_art">
-                <a href="#" class="fa fa-download"></a>
-                <h3>Click above to download!</h3>
-                <p>Not really clickable.</p>
-            </article>
-        </section>
-
-        <section class="contactForm">
-            <article class="contacts">
-                <h2>Контакти:</h2>
-                <p>Email: <a href="mailto:slavil.bachvarov@gmail.com">slavil.bachvarov@gmail.com</a></p>
-                <p>При въпроси и запитвания, може да се свържете с мен по e-mail. Ще ви отговоря при
-                    първа възможност.</p>
-            </article>
-            <article class="map">
-                <iframe src="https://maps.google.com/maps?q=Plovdiv%20city&t=&z=13&ie=UTF8&iwloc=&output=embed" class="maps" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </section>
-            </article>
-        </section>
-    </main>
-    <footer class="footer">
-        <p class="footer_text">@Скучна страничка</p>
-        <ul class="icons">
-            <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-twitter"></a>
-            <a href="#" class="fa fa-linkedin"></a>
-        </ul>
-
-    </footer>
+                    <div>
+                        <a class="btn btn-link btn-floating btn-lg text-dark m-1 pull-right" href="#!" role="button"
+                            data-mdb-ripple-color="dark"><i class="fa fa-facebook-f"></i></a>
+                        <a class="btn btn-link btn-floating btn-lg text-dark m-1 pull-right" href="#!" role="button"
+                            data-mdb-ripple-color="dark"><i class="fa fa-twitter"></i></a>
+                        <a class="btn btn-link btn-floating btn-lg text-dark m-1 pull-right" href="#!" role="button"
+                            data-mdb-ripple-color="dark"><i class="fa fa-google"></i></a>
+                    </div>
+                </section>
+            </div>
+        </footer>
+    </div>
 </body>
+
 
 </html>
